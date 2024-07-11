@@ -2,9 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import styles from './App.module.scss';
+import classNames from 'classnames/bind';
+
+const cx = classNames.bind(styles);
+
 function App() {
   return (
-    <div className="App">
+    <div className={cx('container')}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
